@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(134deg,#4d9ba1,rgb(0, 255, 247));
+    min-height: 100vh;
+    padding: 20px;
+    color: rgb(23, 22, 21)
+}
+.container
+{
+   max-width: 1200px;
+   margin: auto;
+}
+.header{
+    text-align: center;
+    color: beige;
+    margin-bottom: 30px;
+}
+.header h1{
+    font-size: 3.0em;
+
+}
+.search-box  input{
+    padding: 12px;
+    width: 300px;
+    border: none;
+    border-radius: 20pt;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.search-box button{
+    padding: 16px 35px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(142, 224, 34);
+    color: rgb(250, 249, 247);
+    font-size: medium;
+    cursor: pointer;
+}
+.current-weather,
+.forecast-section{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.current-weather-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: bold;
+}
+.location{
+    font-size: 1.6cm;
+    font-weight: bold;
+
+}
+.date{
+    color: crimson;
+}
+.current-main{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.weather-icon{
+    font-size: 5em;
+}
+.temparature{
+    font-size: 5cm;
+    font-weight: bold;
+    color: rgb(37, 72, 231);
+}
+.description{
+     color: rgb(123, 114, 231);
+}
+.weather-details{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap: 15px
+}
+.detail-item{
+    background:#f2f2f2;
+    padding:15px;
+    border-radius:10px;
+    text-align:center
+}
+.value{
+    font-weight:bold;
+    font-size: 1.3em
+}
+.hourly-forecast{
+    display: flex;
+    gap:10px;
+    overflow-x: auto;
+    }
+    .hourly-item{
+        background: #f2f2f2;
+        padding: 10px;
+        border-radius: 10px;
+        min-width: 100px;
+        text-align: center;
+    }
+    .daily-forecast{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+        gap:10px;
+    }
+    .daily-item{
+        background-color: #f2f2f2;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+    }
+.loading{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+}
+.error{
+    background: red;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
